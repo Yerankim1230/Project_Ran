@@ -255,8 +255,37 @@ header .nav-quotes p {
   }
 }
 @media (min-width: 601px) {
-  .nav-bar {
+  .rd-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+  }
+  .rd-container .rd-heading {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .rd-container .rd-heading h1 {
+    font-size: 3rem;
+    border: none;
+  }
+  .rd-container .rd-heading h1::after {
+    content: "";
+    width: 17rem;
+    height: 0.4rem;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(121, 103, 99);
+  }
+  .rd-container .rd-boxes {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+  }
+  .rd-container .rd-boxes .rd-items {
+    display: flex;
+    flex-direction: column;
   }
 }
 @keyframes header-slide {
