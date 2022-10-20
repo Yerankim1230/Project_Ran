@@ -1,0 +1,117 @@
+@use '../components/colors' as *;
+
+.rd-container{
+    background-color: $green-2;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+
+    .rd-heading{
+        
+        h1{
+            font-size: 2rem;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+            padding: 2rem 1rem 0.3rem 1rem;
+            border-bottom: 1px solid $brown-3;
+            width: 57%;
+
+        }
+
+    }
+
+    .rd-boxes{
+        display: flex;
+
+        .rd-items{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            img{
+                
+                width: 80%;
+                height: 30vh;
+                opacity: 0.75;
+
+
+            }
+
+            .rd-items-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                height: 20vh;
+                color: $white-1;
+
+                h2{
+                    font-family: 'Prata', serif;
+                    font-size: 1.3rem;
+                    padding: 0.3rem;
+                }
+
+                p:nth-child(2){
+                    font-size: 1rem;
+                    padding-top: 0.3rem;
+                }
+                
+                .rd-button{
+                    padding: 0.5rem;
+                    margin-top: 0.7rem;
+                    box-shadow: rgba(12, 6, 6, 0.2) 0px 2px 8px 0px;
+
+                    border-radius: 10px;
+
+                    &::after{
+                        content: "\f061";
+                        font-family: "FontAwesome";
+                        padding-right: 0.5rem;
+                        padding-left: 0.3rem;
+                    
+                    }
+
+                    &:hover{
+                        transform: scale(120%, 120%)
+                    }
+
+                }
+            
+            }
+
+            &:nth-child(1) .rd-items-text{
+                background-color: $brown-1;
+            }
+
+            &:nth-child(2) .rd-items-text{
+                background-color: $brown-2;
+            }
+
+            &:nth-child(3) .rd-items-text{
+                background-color: $brown-3;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+        .rd-boxes{
+            flex-direction: column;
+
+            .rd-items{
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    
+}
+
+
+@media (min-width: 601px) {
+        .nav-bar{
+            display: flex;
+
+        }
+    
+}
