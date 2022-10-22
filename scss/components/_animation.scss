@@ -64,30 +64,36 @@
     0%,100% {  // 0%, 100%는 내용이 같아야 흐름이 스무스하다.
     /* content: "magic."; */
     background-image: url("https://i.pinimg.com/564x/e3/e3/b0/e3e3b04f9cefe740153f70d956b30e16.jpg");
-    background-size: 70% 90%; 
+    background-size: 60% 80%; //전반적인 책 이미지에 알맞는 크기
+    background-color: yellow;
     background-repeat: no-repeat;
+    background-position: center; //백그라운드 그림의 포인트뿐만이 아닌 
+                                    //백그라운드 포지션 자체를 중간에!
 
     }
     25% {
     /* content: "magic. neat."; */
     background-image: url("https://i.pinimg.com/236x/7e/a8/a3/7ea8a323dcfb33c11992d8f900097048.jpg");
-    background-size: 70% 90%;
+    background-size: 60% 80%;
     background-repeat: no-repeat;
+    background-position: center;
 
     }
     
     50% {
     /* content: "magic. nett. awesome."; */
     background-image: url("https://i.pinimg.com/236x/1f/df/99/1fdf998267971ddb5fc84c920cab7a15.jpg");
-    background-size: 70% 90%;
+    background-size: 60% 80%;
     background-repeat: no-repeat;
+    background-position: center;
     
     }
     
     75% {
     /* content: "magic. nett. awesome. groovy."; */
     background-image: url("https://i.pinimg.com/236x/00/5d/5d/005d5df9c913b62c7a8f67392f72d255.jpg");
-    background-size: 70% 90%;
+    background-size: 60% 80%;
     background-repeat: no-repeat;
+    background-position: center;
     }
 }

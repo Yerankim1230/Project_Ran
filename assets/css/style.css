@@ -47,26 +47,31 @@
   0%, 100% {
     /* content: "magic."; */
     background-image: url("https://i.pinimg.com/564x/e3/e3/b0/e3e3b04f9cefe740153f70d956b30e16.jpg");
-    background-size: 70% 90%;
+    background-size: 60% 80%;
+    background-color: yellow;
     background-repeat: no-repeat;
+    background-position: center;
   }
   25% {
     /* content: "magic. neat."; */
     background-image: url("https://i.pinimg.com/236x/7e/a8/a3/7ea8a323dcfb33c11992d8f900097048.jpg");
-    background-size: 70% 90%;
+    background-size: 60% 80%;
     background-repeat: no-repeat;
+    background-position: center;
   }
   50% {
     /* content: "magic. nett. awesome."; */
     background-image: url("https://i.pinimg.com/236x/1f/df/99/1fdf998267971ddb5fc84c920cab7a15.jpg");
-    background-size: 70% 90%;
+    background-size: 60% 80%;
     background-repeat: no-repeat;
+    background-position: center;
   }
   75% {
     /* content: "magic. nett. awesome. groovy."; */
     background-image: url("https://i.pinimg.com/236x/00/5d/5d/005d5df9c913b62c7a8f67392f72d255.jpg");
-    background-size: 70% 90%;
+    background-size: 60% 80%;
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 header {
@@ -380,7 +385,6 @@ main {
 .dm-container {
   width: calc(100% - 6em);
   height: 100vh;
-  background-color: tomato;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -389,29 +393,18 @@ main {
 .dm-container .dm-boxes-text {
   width: 50%;
   height: 100vh;
-  background-color: yellow;
-  color: green;
-  font-size: 10rem;
+  font-size: 5rem;
 }
 .dm-container .dm-boxes-text:before {
   content: "cool.";
-  animation: dm-boxes-text 10s infinite 0s;
+  animation: dm-boxes-text 20s infinite 0s;
 }
 .dm-container .dm-boxes-img {
   width: 50%;
   height: 100vh;
-  background-color: green;
-  color: yellow;
-  animation: dm-boxes-img 10s infinite 0s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* .dm-items{
-      animation: dm-boxes-img 10s infinite 0s;
-      width: 100%;
-      height: 100vh;
-      text-align: center;
-  } */
+  background-color: tomato;
+  animation: dm-boxes-img 20s infinite 0s;
+  padding-top: 3rem;
 }
 
 @media (max-width: 600px) {
