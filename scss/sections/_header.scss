@@ -18,8 +18,8 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        /* background-color: rgba(151, 147, 147, 0.15);
-        width: 70%; */
+        background-color: rgba(54, 51, 51, 0.15); 
+        width: 100%; 
         height: 100%;
     } 
 
@@ -102,16 +102,20 @@ header {
         
         h1{
             font-size: 1.9rem;
-            color: $green-1;
+            /* color: $green-1; */
+            color: white;
             padding-top: 1rem;
         }
 
         .q1{
             margin-top: 6rem;
         }
+
         p{
             padding-top: 1rem;
-            color: $green-1;
+            padding-left: 3rem;
+            font-size: 1.9rem;
+            color: white;
         }
     }
 

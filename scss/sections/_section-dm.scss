@@ -1,0 +1,72 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dm-container{
+
+    width: calc(100% - 6em);
+    //그냥 margin: 4rem을 추가하면 밑에 under scrollbar가 생김
+    height: 100vh;
+    background-color: tomato;
+
+    display: flex; //이게 없으면 이미지박스가 밑으로 밀려남
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 30vh;
+    
+
+    .dm-boxes-text{
+        width: 50%;
+        height: 100vh;
+        background-color: yellow;
+
+        color:green;
+        font-size: 10rem;
+
+
+        &:before {
+            content: "cool.";
+            animation: dm-boxes-text 10s infinite 0s;
+        }
+
+    }
+
+    .dm-boxes-img{
+        width: 50%;
+        height: 100vh;
+        background-color: green;
+        color:yellow;
+        animation: dm-boxes-img 10s infinite 0s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* .dm-items{
+            animation: dm-boxes-img 10s infinite 0s;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+        } */
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    .dm-container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            .dm-boxes-text, .dm-boxes-img{
+                width: 100%;
+                height: 40vh;
+            }
+
+            
+        }
+    
+}  
