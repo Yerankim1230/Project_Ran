@@ -3,12 +3,14 @@
 @use 'sections/header';
 @use 'sections/section-bf';
 @use 'sections/section-rd';
+@use 'sections/section-dm';
 
 //COMPOTENTS
 /* @use 'components/mixins'; */ //작동안됨 퍽유
 @use 'components/icons';
 @use 'components/colors';
 @use 'components/animation';
+
 
 
 * {
@@ -24,8 +26,14 @@ body {
     height: 100vh;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Prata&family=Zilla+Slab:ital,wght@1,400;1,500&display=swap');
+
 
 
 
