@@ -1,12 +1,26 @@
+@use '../components/colors' as *;
+
 //HEADER
 
-@keyframes header-slide {
+@keyframes nav-container {
     0% {
-        
-        opacity: 0;
+        /* opacity: 0; */
+        background-color: rgba(151, 147, 147, 0.3);
     }
+
+    50% {
+
+        background-color: rgba(151, 147, 147, 0.3);
+    }
+
+   /*  75%{
+
+        background-color: rgba(151, 147, 147, 0.5);
+    } */
+
     100%{
-        opacity: 1;
+       /*  opacity: 1; */
+        background-color: $green-4;
     }
 }
 

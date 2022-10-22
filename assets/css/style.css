@@ -1,6 +1,23 @@
 /* @use 'components/mixins'; */
 @import url("https://fonts.googleapis.com/css2?family=Prata&family=Zilla+Slab:ital,wght@1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
+@keyframes nav-container {
+  0% {
+    /* opacity: 0; */
+    background-color: rgba(151, 147, 147, 0.3);
+  }
+  50% {
+    background-color: rgba(151, 147, 147, 0.3);
+  }
+  /*  75%{
+
+       background-color: rgba(151, 147, 147, 0.5);
+   } */
+  100% {
+    /*  opacity: 1; */
+    background-color: rgb(136, 150, 101);
+  }
+}
 header {
   width: 100%;
   height: 100vh;
@@ -15,17 +32,29 @@ header::after {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(151, 147, 147, 0.15);
-  width: 67%;
+  /* background-color: rgba(151, 147, 147, 0.15);
+  width: 70%; */
   height: 100%;
 }
 header .nav-container {
   z-index: 1;
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: fixed;
+  animation: nav-container 10s normal 1;
+  background-color: rgb(136, 150, 101);
+}
+header .nav-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: rgba(17, 17, 17, 0.1); */
+  width: 100%;
+  height: 100%;
 }
 header .nav-container .nav-logo {
   color: rgb(201, 208, 201);
@@ -62,7 +91,7 @@ header .nav-container .nav-icon li:nth-child(3)::after {
 }
 header .nav-quotes {
   padding: 1rem;
-  width: 80%;
+  width: 70%;
 }
 header .nav-quotes h1 {
   font-size: 1.9rem;
@@ -176,7 +205,7 @@ header .nav-quotes p {
   }
 }
 .rd-container {
-  background-color: rgb(166, 176, 168);
+  background-color: rgb(226, 226, 224);
   font-family: "Zilla Slab", serif;
   font-weight: 400;
 }
@@ -236,13 +265,13 @@ header .nav-quotes p {
   transform: scale(120%, 120%);
 }
 .rd-container .rd-boxes .rd-items:nth-child(1) .rd-items-text {
-  background-color: rgb(182, 143, 126);
+  background-color: rgb(121, 103, 99);
 }
 .rd-container .rd-boxes .rd-items:nth-child(2) .rd-items-text {
   background-color: rgb(121, 103, 99);
 }
 .rd-container .rd-boxes .rd-items:nth-child(3) .rd-items-text {
-  background-color: rgb(86, 67, 63);
+  background-color: rgb(121, 103, 99);
 }
 
 @media only screen and (min-width: 360px) and (max-width: 600px) {
@@ -273,10 +302,10 @@ header .nav-quotes p {
   .rd-container .rd-heading h1::after {
     content: "";
     width: 17rem;
-    height: 0.4rem;
+    height: 0.2rem;
     display: block;
     margin: 0 auto;
-    background-color: rgb(121, 103, 99);
+    background-color: rgb(131, 142, 146);
   }
   .rd-container .rd-boxes {
     display: flex;
@@ -286,14 +315,6 @@ header .nav-quotes p {
   .rd-container .rd-boxes .rd-items {
     display: flex;
     flex-direction: column;
-  }
-}
-@keyframes header-slide {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 * {

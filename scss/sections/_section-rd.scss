@@ -1,7 +1,7 @@
 @use '../components/colors' as *;
 
 .rd-container{
-    background-color: $green-2;
+    background-color: $white-2;
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
 
@@ -81,7 +81,7 @@
             }
 
             &:nth-child(1) .rd-items-text{
-                background-color: $brown-1;
+                background-color: $brown-2;
             }
 
             &:nth-child(2) .rd-items-text{
@@ -89,7 +89,7 @@
             }
 
             &:nth-child(3) .rd-items-text{
-                background-color: $brown-3;
+                background-color: $brown-2;
             }
         }
     }
@@ -129,10 +129,10 @@
                 &::after{
                 content: "";
                 width: 17rem;
-                height: 0.4rem;
+                height: 0.2rem;
                 display: block;
                 margin: 0 auto; // Zentralisierung
-                background-color: $brown-2;
+                background-color: $green-3;
 
             }
             }
