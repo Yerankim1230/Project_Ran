@@ -25,7 +25,7 @@
 }
 
 
-
+// _SECITON-DM
 @keyframes dm-boxes-text {
     0%,100% {  // 0%, 100%는 내용이 같아야 흐름이 스무스하다.
     content: "magic.";
@@ -95,5 +95,32 @@
     background-size: 60% 80%;
     background-repeat: no-repeat;
     background-position: center;
+    }
+}
+
+
+
+
+
+
+@keyframes header-text {
+    0%,100% {  // 0%, 100%는 내용이 같아야 흐름이 스무스하다.
+    content: "The more that you read, the more things you will know.";
+    }
+
+    20% {
+    content: "The more that you read, the more things you will know. The more that you learn,";
+
+
+    }
+
+    50% {
+    content: "The more that you read, the more things you will know. The more that you learn, the more places you’ll go.";
+
+    }
+    
+    75% {
+    content: "The more that you read, the more things you will know. The more that you learn, the more places you’ll go. -Dr. Seuss";
+
     }
 }

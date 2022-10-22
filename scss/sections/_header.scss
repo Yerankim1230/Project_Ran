@@ -13,6 +13,7 @@ header {
     mask-repeat: no-repeat;
     font-family: 'PT Serif', serif; 
 
+
     &::after{
         content: "";
         position: absolute;
@@ -98,6 +99,13 @@ header {
         padding: 1rem;
         width: 70%;
         
+        &:before {
+            content: "cool.";
+            animation: header-text 10s infinite 0s;
+            font-size: 5rem;
+            color: white;
+            height: 100vh;
+        }
         
         
         h1{
