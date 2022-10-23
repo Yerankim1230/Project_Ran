@@ -3,18 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
 @keyframes nav-container {
   0% {
-    /* opacity: 0; */
-    background-color: rgba(151, 147, 147, 0.3);
+    opacity: 0;
+    /* background-color: rgba(151, 147, 147, 0.1); */
   }
   50% {
-    background-color: rgba(151, 147, 147, 0.3);
+    /* background-color: rgba(151, 147, 147, 0.1); */
+    opacity: 0;
   }
-  /*  75%{
-
-          background-color: rgba(151, 147, 147, 0.5);
-      } */
+  95% {
+    background-color: rgba(151, 147, 147, 0.5);
+    opacity: 0.3;
+  }
   100% {
-    /*  opacity: 1; */
+    opacity: 1;
     background-color: rgb(136, 150, 101);
   }
 }
@@ -77,16 +78,42 @@
 }
 @keyframes header-text {
   0%, 100% {
-    content: "The more that you read, the more things you will know.";
+    content: "ㅤㅤ";
+  }
+  16% {
+    content: "The more that you read, ";
+  }
+  31% {
+    content: "The more that you read, ";
+  }
+  32% {
+    content: "The more that you read, ";
+  }
+  48% {
+    content: "The more that you read, ㅤㅤthe more things you will know. The more that you learn,";
+  }
+  64% {
+    content: "The more that you read, ㅤㅤthe more things you will know. The more that you learn, ㅤㅤthe more places you’ll go.";
+  }
+  80% {
+    content: "The more that you read, ㅤㅤthe more things you will know. The more that you learn, ㅤㅤthe more places you’ll go. ㅤㅤㅤㅤ-Dr. Seuss";
+  }
+}
+@keyframes header-text-desk {
+  0%, 100% {
+    content: "The more that you read, ";
   }
   20% {
-    content: "The more that you read, the more things you will know. The more that you learn,";
+    content: "The more that you read, ㅤthe more things you will know. ";
   }
-  50% {
-    content: "The more that you read, the more things you will know. The more that you learn, the more places you’ll go.";
+  40% {
+    content: "The more that you read, ㅤthe more things you will know. ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤThe more that you learn,";
   }
-  75% {
-    content: "The more that you read, the more things you will know. The more that you learn, the more places you’ll go. -Dr. Seuss";
+  60% {
+    content: "The more that you read, ㅤthe more things you will know. ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤThe more that you learn, ㅤthe more places you’ll go.";
+  }
+  80% {
+    content: "The more that you read, ㅤthe more things you will know. ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤThe more that you learn, ㅤthe more places you’ll go. ㅤ-Dr. Seuss";
   }
 }
 header {
@@ -103,8 +130,8 @@ header::after {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(54, 51, 51, 0.15);
-  width: 100%;
+  background-color: rgba(54, 51, 51, 0.2);
+  width: 55%;
   height: 100%;
 }
 header .nav-container {
@@ -115,7 +142,7 @@ header .nav-container {
   align-items: center;
   justify-content: space-around;
   position: fixed;
-  animation: nav-container 10s normal 1;
+  animation: nav-container 11s normal 1;
   background-color: rgb(136, 150, 101);
 }
 header .nav-container::after {
@@ -162,17 +189,19 @@ header .nav-container .nav-icon li:nth-child(3)::after {
 }
 header .nav-quotes {
   padding: 1rem;
-  width: 70%;
+  width: 75%;
+  padding-top: 10rem;
 }
 header .nav-quotes:before {
-  content: "cool.";
-  animation: header-text 10s infinite 0s;
-  font-size: 5rem;
+  content: "";
+  animation: header-text 15s infinite 0s;
+  animation-delay: 2s;
+  font-size: 2rem;
   color: white;
   height: 100vh;
 }
 header .nav-quotes h1 {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   /* color: $green-1; */
   color: white;
   padding-top: 1rem;
@@ -223,12 +252,18 @@ header .nav-quotes p {
     font-size: 1.4rem;
   }
   header .nav-quotes {
-    padding-left: 20rem;
-    padding-top: 13em;
+    padding-left: 10rem;
+    padding-top: 23em;
+    width: 50%;
   }
-  header .nav-quotes h1 {
-    font-size: 3rem;
-    padding: 1rem;
+  header .nav-quotes:before {
+    content: "";
+    animation: header-text-desk 15s infinite 0s;
+    animation-delay: 2s;
+    font-size: 4rem;
+    color: white;
+    height: 100vh;
+    width: 50%;
   }
 }
 /* @mixin nav-ul {
@@ -415,7 +450,7 @@ main {
 .dm-container .dm-boxes-text {
   width: 50%;
   height: 100vh;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .dm-container .dm-boxes-text:before {
   content: "cool.";

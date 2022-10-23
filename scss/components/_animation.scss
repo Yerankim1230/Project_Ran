@@ -4,22 +4,23 @@
 
 @keyframes nav-container {
     0% {
-        /* opacity: 0; */
-        background-color: rgba(151, 147, 147, 0.3);
+        opacity: 0;
+        /* background-color: rgba(151, 147, 147, 0.1); */
     }
 
     50% {
 
-        background-color: rgba(151, 147, 147, 0.3);
+        /* background-color: rgba(151, 147, 147, 0.1); */
+        opacity: 0;
     }
 
-/*  75%{
-
+    95%{
         background-color: rgba(151, 147, 147, 0.5);
-    } */
+        opacity: 0.3;
+    }
 
     100%{
-       /*  opacity: 1; */
+        opacity: 1;
         background-color: $green-4;
     }
 }
@@ -105,22 +106,61 @@
 
 @keyframes header-text {
     0%,100% {  // 0%, 100%는 내용이 같아야 흐름이 스무스하다.
-    content: "The more that you read, the more things you will know.";
+    content: "ㅤㅤ";
     }
 
-    20% {
-    content: "The more that you read, the more things you will know. The more that you learn,";
+    16% {  
+    content: "The more that you read, ";
+    }
+
+    31% {  
+    content: "The more that you read, ";
+    }
+
+    32% { 
+    content: "The more that you read, ";
+    }
+
+
+    48% {
+    content: "The more that you read, ㅤㅤthe more things you will know. The more that you learn,";
 
 
     }
 
-    50% {
-    content: "The more that you read, the more things you will know. The more that you learn, the more places you’ll go.";
+    64% {
+    content: "The more that you read, ㅤㅤthe more things you will know. The more that you learn, ㅤㅤthe more places you’ll go.";
 
     }
     
-    75% {
-    content: "The more that you read, the more things you will know. The more that you learn, the more places you’ll go. -Dr. Seuss";
+    80% {
+    content: "The more that you read, ㅤㅤthe more things you will know. The more that you learn, ㅤㅤthe more places you’ll go. ㅤㅤㅤㅤ-Dr. Seuss";
+    }
+}
 
+
+@keyframes header-text-desk {
+    0%,100% {  // 0%, 100%는 내용이 같아야 흐름이 스무스하다.
+    content: "The more that you read, ";
+    }
+
+    20% {
+    content: "The more that you read, ㅤthe more things you will know. ";
+
+    }
+
+    40% {
+    content: "The more that you read, ㅤthe more things you will know. ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤThe more that you learn,";
+
+
+    }
+
+    60% {
+    content: "The more that you read, ㅤthe more things you will know. ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤThe more that you learn, ㅤthe more places you’ll go.";
+
+    }
+    
+    80% {
+    content: "The more that you read, ㅤthe more things you will know. ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤThe more that you learn, ㅤthe more places you’ll go. ㅤ-Dr. Seuss";
     }
 }
