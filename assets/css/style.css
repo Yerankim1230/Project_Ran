@@ -81,33 +81,20 @@
 }
 @keyframes dm-boxes-img {
   0%, 100% {
-    /* content: "magic."; */
     background-image: url("https://i.pinimg.com/564x/c1/5e/97/c15e9753d9a5dcc431b1d055046e4bdd.jpg");
-    background-size: 60% 80%;
+    background-size: 80% 90%;
     background-color: #dddddd;
     background-repeat: no-repeat;
     background-position: center;
   }
   25% {
-    /* content: "magic. neat."; */
     background-image: url("https://i.pinimg.com/564x/ad/7c/e4/ad7ce4041dde3e35035f312fa504d67d.jpg");
-    background-size: 60% 80%;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   50% {
-    /* content: "magic. nett. awesome."; */
     background-image: url("https://i.pinimg.com/564x/5a/7a/e9/5a7ae99d0f09258b445f5382807cd9a8.jpg");
-    background-size: 60% 80%;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   75% {
-    /* content: "magic. nett. awesome. groovy."; */
     background-image: url("https://i.pinimg.com/564x/14/0a/3e/140a3eb934231384e59b11da2cebdee7.jpg");
-    background-size: 60% 80%;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 header {
