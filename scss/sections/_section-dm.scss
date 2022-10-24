@@ -49,6 +49,7 @@ main{
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
+            box-orient: vertical;
             
 
             .dm-boxes-text{
@@ -56,11 +57,13 @@ main{
                 height: 40vh;
                 font-size: 2.5em;
                 margin: 1rem 0;
+                order: 2; //swap div position
             }
 
             .dm-boxes-img{
                 width: 100%;
                 height: 45vh;
+                order: 1; //swap div position
             }
 
             
