@@ -431,6 +431,7 @@ main {
   width: 50%;
   height: 100vh;
   color: #424242;
+  /* background-color: tomato; */
   /* animation: dm-boxes-text 20s infinite 0s; */
 }
 .dm-container .dm-boxes-text:before {
@@ -440,7 +441,6 @@ main {
 .dm-container .dm-boxes-img {
   width: 50%;
   height: 100vh;
-  background-color: tomato;
   animation: dm-boxes-img 20s infinite 0s;
   padding-top: 3rem;
 }
@@ -474,7 +474,7 @@ main {
   .dm-container .dm-boxes-text {
     width: 40%;
     font-size: 7em;
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 3rem 1rem 1rem 5rem;
   }
   .dm-container .dm-boxes-img {
     width: 60%;
