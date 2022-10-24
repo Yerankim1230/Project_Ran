@@ -60,29 +60,21 @@
 @keyframes dm-boxes-text {
   0%, 100% {
     content: "Land Rover Topographic CALLENDAR";
-    background-repeat: repeat;
   }
   25% {
     content: "Salvador Dali, un Catalan à l'attaque de la capitale";
-    background-size: cover;
-    background-repeat: no-repeat;
   }
   50% {
-    content: "GRØNN ㅤㅤMAGAZINE Issue";
-    background-size: cover;
-    background-repeat: no-repeat;
+    content: "CRITERION DESIGNS";
   }
   75% {
     content: "DESIGN PORTFOLIO - by Riccardo Zecchini";
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 @keyframes dm-boxes-img {
   0%, 100% {
     background-image: url("https://i.pinimg.com/564x/c1/5e/97/c15e9753d9a5dcc431b1d055046e4bdd.jpg");
-    background-size: 80% 90%;
-    background-color: #dddddd;
+    background-size: 70% 90%;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -90,7 +82,7 @@
     background-image: url("https://i.pinimg.com/564x/ad/7c/e4/ad7ce4041dde3e35035f312fa504d67d.jpg");
   }
   50% {
-    background-image: url("https://i.pinimg.com/564x/5a/7a/e9/5a7ae99d0f09258b445f5382807cd9a8.jpg");
+    background-image: url("https://i.pinimg.com/564x/f9/26/c4/f926c4a20d9a186abb761a28c4ae7869.jpg");
   }
   75% {
     background-image: url("https://i.pinimg.com/564x/14/0a/3e/140a3eb934231384e59b11da2cebdee7.jpg");
@@ -427,8 +419,7 @@ header .nav-quotes p {
   border: 1px;
 }
 .dm-container h1 .new {
-  /* color: rgb(199, 108, 92); */
-  border-bottom: 0.7rem solid rgb(231, 152, 138);
+  border-bottom: 0.7rem solid rgb(160, 61, 43);
 }
 
 .dm-wrapper {
@@ -452,7 +443,7 @@ header .nav-quotes p {
 .dm-wrapper .dm-boxes-img {
   width: 50%;
   height: 100vh;
-  animation: dm-boxes-img 20s infinite 0s;
+  animation: dm-boxes-img 20s ease-in infinite 0s;
   padding-top: 3rem;
 }
 
@@ -488,12 +479,12 @@ header .nav-quotes p {
   .dm-wrapper {
     display: flex;
     flex-wrap: nowrap;
-    /* margin-top: 10vh; */
   }
   .dm-wrapper .dm-boxes-text {
     width: 40%;
     font-size: 6em;
-    padding: 3rem 1rem 1rem 5rem;
+    padding: 3rem 7rem 0rem 0rem;
+    /* background-color: tomato; */
   }
   .dm-wrapper .dm-boxes-img {
     width: 60%;

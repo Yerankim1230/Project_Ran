@@ -13,8 +13,7 @@
         border: 1px ;
 
         .new{
-            /* color: rgb(199, 108, 92); */
-            border-bottom: 0.7rem solid rgb(231, 152, 138);
+            border-bottom: 0.7rem solid rgb(160, 61, 43);
         }
     }
 
@@ -47,7 +46,7 @@
     .dm-boxes-img{
         width: 50%;
         height: 100vh;
-        animation: dm-boxes-img 20s infinite 0s;
+        animation: dm-boxes-img 20s ease-in infinite 0s;
         padding-top: 3rem;
     }
 }
@@ -97,13 +96,12 @@
     .dm-wrapper{
             display: flex;
             flex-wrap: nowrap;
-            /* margin-top: 10vh; */
-            
-
+        
             .dm-boxes-text{
                 width: 40%;
                 font-size: 6em;
-                padding: 3rem 1rem 1rem 5rem;
+                padding: 3rem 7rem 0rem 0rem;
+                /* background-color: tomato; */
                 
             }
 

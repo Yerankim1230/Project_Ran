@@ -95,28 +95,20 @@
 @keyframes dm-boxes-text {
     0%,100% {  // 0%, 100%는 내용이 같아야 흐름이 스무스하다.
     content: "Land Rover Topographic CALLENDAR";
-    background-repeat: repeat;
+
     }
     25% {
     content: "Salvador Dali, un Catalan à l'attaque de la capitale";
-    background-size: cover;
-    background-repeat: no-repeat;
-
     }
     
     50% {
-    content: "GRØNN ㅤㅤMAGAZINE Issue";
+    content: "CRITERION DESIGNS"; 
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    
     }
     
     75% {
     content: "DESIGN PORTFOLIO - by Riccardo Zecchini";
 
-    background-size: cover;
-    background-repeat: no-repeat;
     }
 }
 
@@ -125,8 +117,7 @@
 @keyframes dm-boxes-img {
     0%,100% {  // 0%, 100%는 내용이 같아야 흐름이 스무스하다.
     background-image: url("https://i.pinimg.com/564x/c1/5e/97/c15e9753d9a5dcc431b1d055046e4bdd.jpg");
-    background-size: 80% 90%; //전반적인 책 이미지에 알맞는 크기
-    background-color: #dddddd;
+    background-size: 70% 90%; //전반적인 책 이미지에 알맞는 크기
     background-repeat: no-repeat;
     background-position: center; //백그라운드 그림의 포인트뿐만이 아닌 
                                     //백그라운드 포지션 자체를 중간에!
@@ -137,7 +128,7 @@
     }
     
     50% {
-    background-image: url("https://i.pinimg.com/564x/5a/7a/e9/5a7ae99d0f09258b445f5382807cd9a8.jpg");
+    background-image: url("https://i.pinimg.com/564x/f9/26/c4/f926c4a20d9a186abb761a28c4ae7869.jpg");
     }
     
     75% {
