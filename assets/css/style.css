@@ -16,64 +16,6 @@
   }
   100% {
     opacity: 1;
-    background-color: rgb(136, 150, 101);
-  }
-}
-@keyframes dm-boxes-text {
-  0%, 100% {
-    content: "magic.";
-    /* background-image: url("https://i.pinimg.com/564x/e3/e3/b0/e3e3b04f9cefe740153f70d956b30e16.jpg"); */
-    background-size: cover;
-    background-repeat: repeat;
-  }
-  25% {
-    content: "magic. neat.";
-    /* background-image: url("https://i.pinimg.com/236x/7e/a8/a3/7ea8a323dcfb33c11992d8f900097048.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  50% {
-    content: "magic. nett. awesome.";
-    /* background-image: url("https://i.pinimg.com/236x/1f/df/99/1fdf998267971ddb5fc84c920cab7a15.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  75% {
-    content: "magic. nett. awesome. groovy.";
-    /* background-image: url("https://i.pinimg.com/236x/00/5d/5d/005d5df9c913b62c7a8f67392f72d255.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-@keyframes dm-boxes-img {
-  0%, 100% {
-    /* content: "magic."; */
-    background-image: url("https://i.pinimg.com/564x/e3/e3/b0/e3e3b04f9cefe740153f70d956b30e16.jpg");
-    background-size: 60% 80%;
-    background-color: yellow;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  25% {
-    /* content: "magic. neat."; */
-    background-image: url("https://i.pinimg.com/236x/7e/a8/a3/7ea8a323dcfb33c11992d8f900097048.jpg");
-    background-size: 60% 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  50% {
-    /* content: "magic. nett. awesome."; */
-    background-image: url("https://i.pinimg.com/236x/1f/df/99/1fdf998267971ddb5fc84c920cab7a15.jpg");
-    background-size: 60% 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  75% {
-    /* content: "magic. nett. awesome. groovy."; */
-    background-image: url("https://i.pinimg.com/236x/00/5d/5d/005d5df9c913b62c7a8f67392f72d255.jpg");
-    background-size: 60% 80%;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 @keyframes header-text {
@@ -116,6 +58,58 @@
     content: "The more that you read, ㅤthe more things you will know. ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤThe more that you learn, ㅤthe more places you’ll go. ㅤ-Dr. Seuss";
   }
 }
+@keyframes dm-boxes-text {
+  0%, 100% {
+    content: "Land Rover Topographic CALLENDAR";
+    background-repeat: repeat;
+  }
+  25% {
+    content: "Salvador Dali, un Catalan à l'attaque de la capitale";
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50% {
+    content: "GRØNN ㅤㅤMAGAZINE Issue";
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  75% {
+    content: "DESIGN PORTFOLIO - by Riccardo Zecchini, via Behance";
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@keyframes dm-boxes-img {
+  0%, 100% {
+    /* content: "magic."; */
+    background-image: url("https://i.pinimg.com/564x/c1/5e/97/c15e9753d9a5dcc431b1d055046e4bdd.jpg");
+    background-size: 60% 80%;
+    background-color: #dddddd;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  25% {
+    /* content: "magic. neat."; */
+    background-image: url("https://i.pinimg.com/564x/ad/7c/e4/ad7ce4041dde3e35035f312fa504d67d.jpg");
+    background-size: 60% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  50% {
+    /* content: "magic. nett. awesome."; */
+    background-image: url("https://i.pinimg.com/564x/5a/7a/e9/5a7ae99d0f09258b445f5382807cd9a8.jpg");
+    background-size: 60% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  75% {
+    /* content: "magic. nett. awesome. groovy."; */
+    background-image: url("https://i.pinimg.com/564x/14/0a/3e/140a3eb934231384e59b11da2cebdee7.jpg");
+    background-size: 60% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 header {
   width: 100%;
   height: 100vh;
@@ -142,8 +136,8 @@ header .nav-container {
   align-items: center;
   justify-content: space-around;
   position: fixed;
-  animation: nav-container 11s normal 1;
-  background-color: rgb(136, 150, 101);
+  animation: nav-container 12.5s normal 1;
+  background-color: #424242;
 }
 header .nav-container::after {
   content: "";
@@ -445,15 +439,15 @@ main {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top: 30vh;
 }
 .dm-container .dm-boxes-text {
   width: 50%;
   height: 100vh;
-  font-size: 3rem;
+  color: #424242;
+  /* animation: dm-boxes-text 20s infinite 0s; */
 }
 .dm-container .dm-boxes-text:before {
-  content: "cool.";
+  content: "";
   animation: dm-boxes-text 20s infinite 0s;
 }
 .dm-container .dm-boxes-img {
@@ -470,9 +464,30 @@ main {
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  .dm-container .dm-boxes-text, .dm-container .dm-boxes-img {
+  .dm-container .dm-boxes-text {
     width: 100%;
     height: 40vh;
+    font-size: 2.5em;
+    margin: 1rem 0;
+  }
+  .dm-container .dm-boxes-img {
+    width: 100%;
+    height: 45vh;
+  }
+}
+@media (min-width: 601px) {
+  .dm-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 10vh;
+  }
+  .dm-container .dm-boxes-text {
+    width: 40%;
+    font-size: 7em;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .dm-container .dm-boxes-img {
+    width: 60%;
   }
 }
 * {
