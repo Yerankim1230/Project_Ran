@@ -1,23 +1,25 @@
 @use '../components/colors' as *;
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.dm-container{
 
-    width: calc(100% - 6em);
+.dm-container{
+    display: flex;
+    width: 100%; // 이게없으면 이미지들 크기가 난리남
+    flex-direction: column;
+
+    h1{
+        color: $black;
+    }
+
+}
+.dm-wrapper{
+    width: 100%;
+   /*  width: calc(100% - 6em); */
     //그냥 margin: 4rem을 추가하면 밑에 under scrollbar가 생김
     height: 100vh;
-
-
     display: flex; //이게 없으면 이미지박스가 밑으로 밀려남
     justify-content: center;
     align-content: center;
 
-    
 
     .dm-boxes-text{
         width: 50%;
@@ -45,7 +47,12 @@ main{
 
 @media (max-width: 600px) {
 
-    .dm-container{
+    h1{
+        font-size: 3rem;
+        padding: 2rem 2rem 0rem 2rem;
+    }
+
+    .dm-wrapper{
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
@@ -56,7 +63,7 @@ main{
                 width: 100%;
                 height: 40vh;
                 font-size: 2.5em;
-                margin: 1rem 0;
+                padding: 2rem;
                 order: 2; //swap div position
             }
 
@@ -73,15 +80,21 @@ main{
 
 @media (min-width: 601px) {
 
-    .dm-container{
+    h1{
+        font-size: 6rem;
+        padding: 6rem ;
+    }
+
+
+    .dm-wrapper{
             display: flex;
             flex-wrap: nowrap;
-            margin-top: 10vh;
+            /* margin-top: 10vh; */
             
 
             .dm-boxes-text{
                 width: 40%;
-                font-size: 7em;
+                font-size: 6em;
                 padding: 3rem 1rem 1rem 5rem;
                 
             }
