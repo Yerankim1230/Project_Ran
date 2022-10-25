@@ -1,4 +1,5 @@
 @use '../components/colors' as *;
+@use '../components/mixins' as *;
 
 
 .dm-container{
@@ -6,14 +7,17 @@
     width: 100%; // 이게없으면 이미지들 크기가 난리남
     flex-direction: column;
     justify-content: center;
+    
 
 
     h1{
         color: $black;
         border: 1px ;
 
+        
+
         .new{
-            border-bottom: 0.7rem solid rgb(160, 61, 43);
+            @include red_underline;
         }
     }
 
@@ -55,22 +59,22 @@
                 text-align: center;
                 width: 100%;
                 font-size: 3rem;
-                border-radius: 11px;
+                border-radius: 5px;
 
 
             }
 
             .price {
-                background-color: white;
+                background-color: $white-1;
                 color: $black;
 
                 &:hover{
                 background-color: $black;
                 color: rgb(241, 237, 237);
                 background-color: rgb(125, 155, 115);
-                box-shadow: 
-    12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
-    -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+                cursor:  pointer;
+
+                box-shadow: inset 6.5em 0 0 0 rgb(125, 155, 115);
                 }
 
                 &::before {
@@ -89,9 +93,7 @@
                 background-color: white;
                 color: $black;
                 background-color: rgb(125, 155, 115);
-                box-shadow: 
-                12px 12px 16px 0 rgba(255, 255, 255, 0.3) inset,
-                -8px -8px 12px 0 rgba(0, 0, 0, .25) inset;
+                    cursor: pointer;
 
                 }
 
@@ -111,9 +113,10 @@
 
 @media (max-width: 600px) {
 
+.dm-container{
+
     h1{
-        font-size: 3rem;
-        padding: 2rem ;
+        @include heading-m;
     }
 
     .dm-wrapper{
@@ -132,7 +135,7 @@
 
                 .text-wrapper{
                     width: 12rem;
-                    height: 3rem;
+                    height: 2.5rem;
 
                     position: absolute;
                     top: -2.25rem;
@@ -142,7 +145,7 @@
                     div{
                         text-align: center;
                         width: 100%;
-                        font-size: 1.8rem;
+                        font-size: 1.5rem;
                         border-radius: 4px;
                         border: 1px solid rgb(170, 163, 163);
 
@@ -150,25 +153,20 @@
             }
                 
             }
-
             .dm-boxes-img{
                 width: 100%;
                 height: 50vh;
                 order: 1; //swap div position
             }
-
-            
         }
-    
+}      
+}
 
-
-}  
 
 @media (min-width: 601px) {
-
-    h1{
-        font-size: 6rem;
-        padding: 6rem ;
+.dm-container{
+      h1{
+        @include heading-d;
 
     }
 
@@ -195,3 +193,4 @@
     
 }  
 
+}

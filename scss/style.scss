@@ -4,12 +4,13 @@
 @use 'sections/section-bf';
 @use 'sections/section-rd';
 @use 'sections/section-dm';
+@use 'sections/section_rn';
 
 //COMPOTENTS
-/* @use 'components/mixins'; */ //작동안됨 퍽유
 @use 'components/icons';
 @use 'components/colors';
 @use 'components/animation';
+@use 'components/mixins';
 
 
 
@@ -19,6 +20,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    text-rendering: optimizeLegibility;
     /* border: 1px solid tomato; */
 }
 

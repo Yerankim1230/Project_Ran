@@ -1,12 +1,19 @@
 @use "../components/colors" as *;
 
-// HEADER
 
-/* @mixin nav-ul {
+@mixin heading-d {
+        font-size: 6rem;
+        padding: 6rem ;
+        color: $black;
 
-    &>li{
-        padding: 1rem;
-    }
 }
 
- */
+@mixin heading-m {
+        font-size: 3rem;
+        padding: 1.3rem ;
+        color: $black;
+}
+
+@mixin red_underline{
+    border-bottom: 0.5rem solid rgb(160, 61, 43);
+}

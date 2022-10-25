@@ -94,7 +94,7 @@
 
 @keyframes dm-boxes-text {
     0%,100% {  // 0%, 100%는 내용이 같아야 흐름이 스무스하다.
-    content: "Land Rover Topographic CALLENDAR";
+    content: "Land Rover Topographic CALENDAR";
 
     }
     25% {
@@ -121,18 +121,34 @@
     background-repeat: no-repeat;
     background-position: center; //백그라운드 그림의 포인트뿐만이 아닌 
                                     //백그라운드 포지션 자체를 중간에!
-
     }
+
+    17.5%{
+    background-image: url("https://i.pinimg.com/564x/ad/7c/e4/ad7ce4041dde3e35035f312fa504d67d.jpg");    
+    }
+
     25% {
     background-image: url("https://i.pinimg.com/564x/ad/7c/e4/ad7ce4041dde3e35035f312fa504d67d.jpg");
     }
     
+    37.5% {
+    background-image: url("https://i.pinimg.com/564x/f9/26/c4/f926c4a20d9a186abb761a28c4ae7869.jpg");
+    }
+
     50% {
     background-image: url("https://i.pinimg.com/564x/f9/26/c4/f926c4a20d9a186abb761a28c4ae7869.jpg");
+    }
+
+    67.5% {
+    background-image: url("https://i.pinimg.com/564x/14/0a/3e/140a3eb934231384e59b11da2cebdee7.jpg");
     }
     
     75% {
     background-image: url("https://i.pinimg.com/564x/14/0a/3e/140a3eb934231384e59b11da2cebdee7.jpg");
+    }
+
+    89.5%{
+        background-image: url("https://i.pinimg.com/564x/c1/5e/97/c15e9753d9a5dcc431b1d055046e4bdd.jpg");
     }
 }
 
