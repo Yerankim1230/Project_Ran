@@ -1,0 +1,120 @@
+@use 'components/mixins' as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    /* border: 1px solid tomato; */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero{
+        img{
+            object-fit: fill;
+            height: 20vh;
+            width: 100%;
+        }
+    }
+
+
+
+@media (max-width: 600px){
+
+
+
+    .contents{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        .titel-wrapper{
+            
+            h1{
+                font-size: 3rem;
+                padding-top: 0.5rem;
+            }
+
+            p{
+                @include p-m;
+            }
+        }
+
+        .sm-title{
+
+            .title{
+                @include h2-m;
+                margin-top: 1rem;
+            }
+        }
+
+        .time-place-wrapper{
+
+            .time, .place{
+
+                h3{
+                    @include h3-m;
+                }
+
+                p{
+                    @include p-m;
+                }
+
+                i{
+                    padding: 1rem;
+                    color: blue;
+                }
+            }
+        }
+    
+        .googlemap-wrapper{
+            margin-top: 2rem;
+            
+            .googlemap{
+                width: 100%;
+            }
+        }
+    
+    
+        .event-wrapper{
+
+            h1{
+                @include h1-m;
+            }
+
+            p{
+                @include p-m;
+
+                &:first-letter{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .benefit{
+
+            h1{
+                @include h2-m;
+                color: green;
+            }
+
+            p{
+                @include h3-m;
+
+                i{
+                    color: green;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+
+    
+
+}

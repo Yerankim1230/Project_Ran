@@ -237,10 +237,9 @@ header {
   background-size: cover;
   background-position: center;
   -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
   font-family: "PT Serif", serif;
 }
-
 header::after {
   content: "";
   position: absolute;
@@ -250,7 +249,6 @@ header::after {
   width: 55%;
   height: 100%;
 }
-
 header .nav-container {
   z-index: 1;
   width: 100%;
@@ -260,10 +258,9 @@ header .nav-container {
   justify-content: space-around;
   position: fixed;
   -webkit-animation: nav-container 12.5s normal 1;
-  animation: nav-container 12.5s normal 1;
+          animation: nav-container 12.5s normal 1;
   background-color: rgba(121, 115, 115, 0.7);
 }
-
 header .nav-container::after {
   content: "";
   position: absolute;
@@ -273,76 +270,64 @@ header .nav-container::after {
   width: 100%;
   height: 100%;
 }
-
 header .nav-container .nav-logo {
   color: rgb(201, 208, 201);
   font-size: 1.2rem;
   height: 7vh;
 }
-
 header .nav-container .nav-logo::before {
   content: "\e59d";
   font-family: "FontAwesome";
   padding-right: 0.5rem;
 }
-
 header .nav-container .nav-icon {
   display: flex;
   justify-content: space-between;
 }
-
 header .nav-container .nav-icon li {
   color: rgb(226, 226, 224);
   padding: 0.7rem;
   /* border: 1px solid red; */
 }
-
 header .nav-container .nav-icon li:first-of-type::after {
   content: "\f218";
   font-family: "FontAwesome";
   font-size: 1.5em;
 }
-
 header .nav-container .nav-icon li:nth-child(2)::after {
   content: "\f002";
   font-family: "FontAwesome";
   font-size: 1.5em;
 }
-
 header .nav-container .nav-icon li:nth-child(3)::after {
   content: "\f0c9";
   font-family: "FontAwesome";
   font-size: 1.5em;
 }
-
 header .nav-quotes {
   padding: 1rem;
   width: 75%;
   padding-top: 10rem;
 }
-
 header .nav-quotes:before {
   content: "";
   -webkit-animation: header-text 15s infinite 0s;
-  animation: header-text 15s infinite 0s;
+          animation: header-text 15s infinite 0s;
   -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+          animation-delay: 2s;
   font-size: 2rem;
   color: white;
   height: 100vh;
 }
-
 header .nav-quotes h1 {
   font-size: 1.7rem;
   /* color: $green-1; */
   color: white;
   padding-top: 1rem;
 }
-
 header .nav-quotes .q1 {
   margin-top: 6rem;
 }
-
 header .nav-quotes p {
   padding-top: 1rem;
   padding-left: 3rem;
@@ -396,9 +381,9 @@ header .nav-quotes p {
   header .nav-quotes:before {
     content: "";
     -webkit-animation: header-text-desk 15s infinite 0s;
-    animation: header-text-desk 15s infinite 0s;
+            animation: header-text-desk 15s infinite 0s;
     -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+            animation-delay: 2s;
     font-size: 4rem;
     color: white;
     height: 100vh;
@@ -415,19 +400,16 @@ header .nav-quotes p {
   align-items: center;
   font-family: "EB Garamond", serif;
 }
-
 .bf-container .bf-items {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
-
 .bf-container .bf-items i {
   text-align: center;
   font-size: 3rem;
   color: rgb(121, 103, 99);
 }
-
 .bf-container .bf-items p {
   text-align: center;
   font-size: 1.2rem;
@@ -457,12 +439,10 @@ header .nav-quotes p {
 .rd-container {
   width: 100%;
 }
-
 .rd-container .rd-heading .red {
   /* @include red_underline; */
   color: rgb(136, 150, 101);
 }
-
 .rd-container .rd-boxes {
   display: flex;
   background-color: rgb(136, 150, 101);
@@ -470,21 +450,18 @@ header .nav-quotes p {
   justify-content: center;
   padding: 1rem;
 }
-
 .rd-container .rd-boxes .rd-items {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
 }
-
 .rd-container .rd-boxes .rd-items img {
   width: 80%;
   height: 30vh;
   -o-object-fit: fill;
-  object-fit: fill;
+     object-fit: fill;
 }
-
 .rd-container .rd-boxes .rd-items .rd-items-text {
   display: flex;
   flex-direction: column;
@@ -495,31 +472,26 @@ header .nav-quotes p {
   color: #424242;
   background-color: rgb(190, 186, 186);
 }
-
 .rd-container .rd-boxes .rd-items .rd-items-text h2 {
   font-size: 1.3rem;
   padding: 0.3rem;
 }
-
 .rd-container .rd-boxes .rd-items .rd-items-text p:nth-child(2) {
   font-size: 1rem;
   padding-top: 0.3rem;
 }
-
 .rd-container .rd-boxes .rd-items .rd-items-text .rd-button {
   padding: 0.5rem;
   margin-top: 0.7rem;
   box-shadow: rgba(12, 6, 6, 0.2) 0px 2px 8px 0px;
   border-radius: 10px;
 }
-
 .rd-container .rd-boxes .rd-items .rd-items-text .rd-button::after {
   content: "\f061";
   font-family: "FontAwesome";
   padding-right: 0.5rem;
   padding-left: 0.3rem;
 }
-
 .rd-container .rd-boxes .rd-items .rd-items-text .rd-button:hover {
   transform: scale(120%, 120%);
 }
@@ -578,12 +550,10 @@ header .nav-quotes p {
   flex-direction: column;
   justify-content: center;
 }
-
 .dm-container h1 {
   color: #424242;
   border: 1px;
 }
-
 .dm-container h1 .new {
   border-bottom: 0.5rem solid rgb(160, 61, 43);
 }
@@ -596,7 +566,6 @@ header .nav-quotes p {
   justify-content: center;
   align-content: center;
 }
-
 .dm-wrapper .dm-boxes-text {
   width: 50%;
   height: 100vh;
@@ -604,13 +573,11 @@ header .nav-quotes p {
   position: relative;
   /* animation: dm-boxes-text 20s infinite 0s; */
 }
-
 .dm-wrapper .dm-boxes-text::before {
   content: "";
   -webkit-animation: dm-boxes-text 20s infinite 0s;
-  animation: dm-boxes-text 20s infinite 0s;
+          animation: dm-boxes-text 20s infinite 0s;
 }
-
 .dm-wrapper .dm-boxes-text .text-wrapper {
   width: 30rem;
   height: 5rem;
@@ -620,19 +587,16 @@ header .nav-quotes p {
   right: 47.35rem;
   display: flex;
 }
-
 .dm-wrapper .dm-boxes-text .text-wrapper div {
   text-align: center;
   width: 100%;
   font-size: 3rem;
   border-radius: 5px;
 }
-
 .dm-wrapper .dm-boxes-text .text-wrapper .price {
   background-color: rgb(238, 240, 239);
   color: #424242;
 }
-
 .dm-wrapper .dm-boxes-text .text-wrapper .price:hover {
   background-color: #424242;
   color: rgb(241, 237, 237);
@@ -640,30 +604,26 @@ header .nav-quotes p {
   cursor: pointer;
   box-shadow: inset 6.5em 0 0 0 rgb(125, 155, 115);
 }
-
 .dm-wrapper .dm-boxes-text .text-wrapper .price::before {
   content: "";
   -webkit-animation: price 20s infinite 0s;
-  animation: price 20s infinite 0s;
+          animation: price 20s infinite 0s;
 }
-
 .dm-wrapper .dm-boxes-text .text-wrapper .buy {
   background-color: #424242;
   color: white;
 }
-
 .dm-wrapper .dm-boxes-text .text-wrapper .buy:hover {
   background-color: white;
   color: #424242;
   background-color: rgb(125, 155, 115);
   cursor: pointer;
 }
-
 .dm-wrapper .dm-boxes-img {
   width: 50%;
   height: 100vh;
   -webkit-animation: dm-boxes-img 20s infinite 0s;
-  animation: dm-boxes-img 20s infinite 0s;
+          animation: dm-boxes-img 20s infinite 0s;
   padding-top: 3rem;
 }
 
@@ -733,17 +693,14 @@ header .nav-quotes p {
   width: 100%;
   flex-wrap: wrap;
 }
-
 .rn-container .heading {
   font-size: 3rem;
   padding: 1.3rem;
   color: #424242;
 }
-
 .rn-container .heading .red {
   border-bottom: 0.5rem solid rgb(160, 61, 43);
 }
-
 .rn-container .rn-boxes-wrapper {
   display: flex;
   flex-direction: row;
@@ -751,28 +708,23 @@ header .nav-quotes p {
   flex-wrap: wrap;
   padding: 1rem;
 }
-
 .rn-container .rn-boxes-wrapper .rn-boxes {
   width: 50%;
   display: flex;
   flex-direction: column;
   padding-top: 1.5rem;
 }
-
 .rn-container .rn-boxes-wrapper .rn-boxes img {
   width: 10em;
   height: 13em;
 }
-
 .rn-container .rn-boxes-wrapper .rn-boxes h1 {
   font-size: 1.3rem;
 }
-
 .rn-container .rn-boxes-wrapper .rn-boxes .rn-text {
   font-size: 0.8rem;
   width: 80%;
 }
-
 .rn-container .rn-boxes-wrapper .rn-boxes .rn-price {
   color: rgb(47, 117, 47);
   font-size: 1.3em;
@@ -823,7 +775,7 @@ header .nav-quotes p {
     color: rgb(238, 240, 239);
     font-size: 3.5rem;
     -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
   }
   .rn-container .rn-boxes-wrapper .box1 .rn-text {
     font-size: 1.5rem;
@@ -869,7 +821,7 @@ header .nav-quotes p {
     color: rgb(238, 240, 239);
     font-size: 4rem;
     -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
   }
   .rn-container .rn-boxes-wrapper .box6 .rn-text {
     font-size: 1.3rem;
@@ -942,6 +894,4 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} /*# sourceMappingURL=style.css.map */
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  /* border: 1px solid tomato; */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 20vh;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .contents {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .contents .titel-wrapper h1 {
+    font-size: 3rem;
+    padding-top: 0.5rem;
+  }
+  .contents .titel-wrapper p {
+    font-size: 1.1rem;
+    padding: 0.2rem 1rem;
+  }
+  .contents .sm-title .title {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+  }
+  .contents .time-place-wrapper .time h3, .contents .time-place-wrapper .place h3 {
+    font-size: 1.3rem;
+    padding: 0.3rem 0;
+  }
+  .contents .time-place-wrapper .time p, .contents .time-place-wrapper .place p {
+    font-size: 1.1rem;
+    padding: 0.2rem 1rem;
+  }
+  .contents .time-place-wrapper .time i, .contents .time-place-wrapper .place i {
+    padding: 1rem;
+    color: blue;
+  }
+  .contents .googlemap-wrapper {
+    margin-top: 2rem;
+  }
+  .contents .googlemap-wrapper .googlemap {
+    width: 100%;
+  }
+  .contents .event-wrapper h1 {
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+  }
+  .contents .event-wrapper p {
+    font-size: 1.1rem;
+    padding: 0.2rem 1rem;
+  }
+  .contents .event-wrapper p:first-letter {
+    font-size: 1.5rem;
+  }
+  .contents .benefit h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    color: green;
+  }
+  .contents .benefit p {
+    font-size: 1.3rem;
+    padding: 0.3rem 0;
+  }
+  .contents .benefit p i {
+    color: green;
+    padding: 0.5rem;
+  }
+}/*# sourceMappingURL=bookclub.css.map */

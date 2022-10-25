@@ -1,26 +1,22 @@
 @use '../components/colors' as *;
+@use '../components/mixins' as *;
 
 .rd-container{
-    background-color: $white-2;
-    font-family: 'Zilla Slab', serif;
-    font-weight: 400;
+
+    width: 100%;
 
     .rd-heading{
-        
-        h1{
-            font-size: 2rem;
-            margin: 0 auto;
-            margin-bottom: 1rem;
-            padding: 2rem 1rem 0.3rem 1rem;
-            border-bottom: 1px solid $brown-3;
-            width: 57%;
-
-        } 
-
+        .red{
+            /* @include red_underline; */
+            color: $green-4;
+        }
     }
-
     .rd-boxes{
         display: flex;
+        background-color: $green-4;
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
 
         .rd-items{
             display: flex;
@@ -32,7 +28,8 @@
                 
                 width: 80%;
                 height: 30vh;
-                opacity: 0.75;
+                object-fit: fill;
+
 
 
             }
@@ -44,7 +41,8 @@
                 align-items: center;
                 width: 80%;
                 height: 20vh;
-                color: $white-1;
+                color: $black;
+                background-color: rgb(190, 186, 186);
 
                 h2{
                     
@@ -80,31 +78,30 @@
             
             }
 
-            &:nth-child(1) .rd-items-text{
-                background-color: $brown-2;
-            }
-
-            &:nth-child(2) .rd-items-text{
-                background-color: $brown-2;
-            }
-
-            &:nth-child(3) .rd-items-text{
-                background-color: $brown-2;
-            }
+        
         }
     }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 600px) {
-        .rd-boxes{
-            flex-direction: column;
+    
+    .rd-container{
 
-            .rd-items{
-                flex-direction: column;
-                width: 100%;
-            }
+        .rd-heading{
+            font-size: 2em;
+            color: $black;
+            padding:1rem;
         }
     
+        .rd-boxes{
+                flex-direction: column;
+
+                .rd-items{
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
+    }
 }
 
 
@@ -117,38 +114,34 @@
         margin: 4rem;
 
         .rd-heading{
-            width: 50%;
-            margin: 0 auto;
+            align-self: flex-start;
             padding: 1rem;
 
             h1{
-                font-size: 3rem;
-                border: none;
-                
-
-                &::after{
-                content: "";
-                width: 17rem;
-                height: 0.2rem;
-                display: block;
-                margin: 0 auto; // Zentralisierung
-                background-color: $green-3;
-
-            }
+                @include heading-d;
             }
         }
+        
 
         .rd-boxes{
             display: flex;
             flex-direction: center;
             align-items: center;
+            justify-content: space-evenly;
+
 
             .rd-items{
                 display: flex;
                 flex-direction: column;
+                
+
+                img{
+                    width: 22rem;
+                    height: 25rem;
+                }
 
                 .rd-items-text{
-
+                    height: 12vh;
                 }
             }
         }
