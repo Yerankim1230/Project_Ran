@@ -14,8 +14,6 @@
         color: $black;
         border: 1px ;
 
-        
-
         .new{
             @include red_underline;
         }
@@ -106,7 +104,7 @@
     .dm-boxes-img{
         width: 50%;
         height: 100vh;
-        animation: dm-boxes-img 20s ease-in infinite 0s;
+        animation: dm-boxes-img 20s infinite 0s;
         padding-top: 3rem;
     }
 }
@@ -165,7 +163,7 @@
 
 @media (min-width: 601px) {
 .dm-container{
-      h1{
+    h1{
         @include heading-d;
 
     }
