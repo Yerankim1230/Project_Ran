@@ -7,13 +7,12 @@
 
     .rd-heading{
         .red{
-            /* @include red_underline; */
-            color: $green-4;
+            color: $n-green-2; // WELL 글씨
         }
     }
     .rd-boxes{
         display: flex;
-        background-color: $green-4;
+        background-color: $n-green-2;
         width: 100%;
         justify-content: center;
         padding: 1rem;
@@ -27,7 +26,7 @@
             img{
                 
                 width: 80%;
-                height: 30vh;
+                height: 40vh;
                 object-fit: fill;
 
 
@@ -37,22 +36,26 @@
             .rd-items-text{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                /* justify-content: center; */
                 align-items: center;
                 width: 80%;
                 height: 20vh;
-                color: $black;
-                background-color: rgb(190, 186, 186);
+                color: $n-white-1;
+                /* background-color: rgb(190, 186, 186); */
 
                 h2{
                     
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     padding: 0.3rem;
                 }
 
                 p:nth-child(2){
                     font-size: 1rem;
                     padding-top: 0.3rem;
+                }
+
+                .rd-button{
+                    background-color: $n-green-1;
                 }
                 
                 .rd-button{
@@ -99,6 +102,8 @@
                 .rd-items{
                     flex-direction: column;
                     width: 100%;
+
+
                 }
             }
     }
@@ -141,7 +146,20 @@
                 }
 
                 .rd-items-text{
-                    height: 12vh;
+                    height: 15vh;
+                    
+                    h2{
+                        font-size: 2em;
+                        padding: 0.3rem;
+                        
+                    }
+
+                    p:nth-child(2){
+                    font-size: 1.5rem;
+                    text-align: center;
+                    width: 100%;
+                    
+                }
                 }
             }
         }

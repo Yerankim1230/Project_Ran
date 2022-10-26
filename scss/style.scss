@@ -1,10 +1,11 @@
 //SECTIONS
 
 @use 'sections/header';
-@use 'sections/section-bf';
-@use 'sections/section-rd';
-@use 'sections/section-dm';
-@use 'sections/section_rn';
+@use 'sections/benefit';
+@use 'sections/forautumn';
+@use 'sections/wellbeing';
+@use 'sections/whatsnew';
+@use 'sections/footer';
 
 //COMPOTENTS
 @use 'components/icons';

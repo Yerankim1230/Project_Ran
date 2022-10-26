@@ -1,0 +1,96 @@
+@use '../components/colors' as *;
+@use '../components/mixins' as *;
+
+footer {
+    background-color: $black-2;
+    color: $green-3;
+    padding: 2rem;
+
+
+    .footer-boxes{
+
+        
+        h2{
+            @include h2-m;
+            cursor: pointer;
+            &:hover{
+            color: $footer-hover;
+            }
+        
+        }
+
+        .footer-text{
+            @include sm-p-m;
+            padding-left: 0;
+            cursor: pointer;
+
+            &:hover{
+            color: $footer-hover;
+            }
+
+            input{
+                @include h3-m;
+                opacity: 0.7;
+
+            }
+        }
+
+        .footer-icon{
+            font-size: 1.3rem;
+            
+            i{
+                padding-right: 1rem;
+
+                &:hover{
+                color: $footer-hover;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px){
+    
+    footer{
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        
+
+        .footer-boxes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            /* border: 1px solid red; */
+
+            
+            .footer-title{
+                width: 60%;
+                font-size: 1.7rem;
+                /* border: 1px solid green; */
+            }
+
+            .footer-text, input{
+                width: 60%;
+                font-size: 1.2rem;
+                /* border: 1px solid yellow; */
+
+            }
+
+            
+            input{
+                height: 2rem;
+            }
+
+            .footer-icon{
+                cursor: pointer;
+                font-size: 2rem;
+                width: 60%;
+                margin-top: 1rem;
+                
+            }
+        }
+    }
+
+}
