@@ -1,225 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/c94264f04d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c94264f04d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
-<!-- !!! HEADER !!! -->
+  <body>
+    <!-- !!! HEADER !!! -->
     <header>
-        <nav class="nav-container"> 
-            <ul class="nav-bar">
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">Bestsellers</a></li>
-                <li><a href="#" class="nav-link">Events</a></li>
-                <li><a href="#" class="nav-link">FAQ</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
-            </ul> 
+      <nav class="nav-container">
+        <ul class="nav-bar">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#rd-container" class="nav-link">Bestsellers</a></li>
+          <li><a href="#" class="nav-link">Events</a></li>
+          <li><a href="#" class="nav-link">FAQ</a></li>
+          <li><a href="#footer" class="nav-link">Contact</a></li>
+        </ul>
 
-            <h1 class="nav-logo">Ranis_Bookstore</h1>
+        <h1 class="nav-logo">Ranis_Bookstore</h1>
 
-            <ul class="nav-icon">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul> 
-        </nav>
+        <ul class="nav-icon">
+          <li class="search"><a href="#"></a></li>
+          <!-- Dropdown -->
+          <li class="cart">
+            <ul class="cart-ul">
+              <h1 class="cart-h1">Bag</h1>
+              <div class="cart-inhalt">
+                <img src="https://i.pinimg.com/564x/dc/34/a9/dc34a9eab548235cabb373925df47c0a.jpg" alt="">
+                  <p>1x ANIMAL N.27</p>
+                  <p>$ 17</p>
+              </div>
+              <div class="cart-total">
+                <p>Total (including tax)</p>
+                <p>$ 17</p>
+              </div>
+              <button class="cart-button">Checkout</button>
+            </ul>
+          </li>
+          <li class="burger">
+            <!-- Dropdown -->
+            <ul class="dd-ul">
+              <li class="dd-li dd-search">
+                <a class="dd-a" href="#"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                  ><span>Search</span></a
+                >
+              </li>
+              <li class="dd-li"><a class="dd-a" href="#">Home</a></li>
+              <li class="dd-li">
+                <a class="dd-a" href="#rd-container">Bestsellers</a>
+              </li>
+              <li class="dd-li"><a class="dd-a" href="#">Events</a></li>
+              <li class="dd-li"><a class="dd-a" href="#">FAQ</a></li>
+              <li class="dd-li"><a class="dd-a" href="#footer">Contact</a></li>
+            </ul>
+          </li>
+          <li class="account">
+            <!-- Dropdown -->
+            <ul class="ac-ul">
+              <li class="ac-li">
+                <h1 class="ac-h1">Account</h1>
+              </li>
+              <li class="ac-li">
+                <input type="text" placeholder="Username" class="ac-username" />
+              </li>
+              <li class="ac-li">
+                <input type="text" placeholder="Password" class="ac-password" />
+              </li>
+              <li class="ac-li">
+                <p class="ac-p">I forgot my password</p>
+              </li>
+              <li class="ac-li">
+                <button class="ac-button">Sign In</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="nav-quotes">
-            <!-- <h1 class="q1">The more that you read,</h1>
+      <div class="nav-quotes">
+        <!-- <h1 class="q1">The more that you read,</h1>
             <h1 class="q2">the more things you will know.</h1>
             <h1 class="q3">The more that you learn, </h1>
             <h1 class="q4">the more places you’ll go.</h1>
-            <p class="q4">-Dr. Seuss</p>  -->    
-        </div>   
+            <p class="q4">-Dr. Seuss</p>  -->
+      </div>
     </header>
 
-
     <main>
+      <!-- ! DM-CONTAINER  -->
 
-        <!-- ! DM-CONTAINER  -->
-        
-        <section class="dm-container">
-            <h1>What's <span class="new">NEW</span></h1>
-            <div class="dm-wrapper">
-                <div class="dm-boxes dm-boxes-img">
-                </div>
-    
-                <div class="dm-boxes dm-boxes-text">
-                    <div class="text-wrapper">
-                        <div class="price"></div>
-                        <div class="buy">BUY</div>
-                    </div>
-                </div>
+      <section class="dm-container">
+        <h1>What's <span class="new">NEW</span></h1>
+        <div class="dm-wrapper">
+          <div class="dm-boxes dm-boxes-img"></div>
+
+          <div class="dm-boxes dm-boxes-text">
+            <div class="text-wrapper">
+              <div class="price"></div>
+              <div class="buy">BUY</div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- ! RD-CONTAINER -->
-        <section class="rn-container">
-            <h1 class="heading">FOR <span class="red">AUTUMN</span></h1>
+      <!-- ! RD-CONTAINER -->
+      <section class="rn-container">
+        <h1 class="heading">FOR <span class="red">AUTUMN</span></h1>
 
-            <div class="rn-boxes-wrapper">
-                <div class="rn-boxes rn-boxes-1 box1">
-                    <img src="https://chapterone.qodeinteractive.com/wp-content/uploads/2019/07/product-7.jpg" alt="">
-                    <div class="text-wrapping">
-                        <h1>Renaissance renaissance-history</h1>
-                        <p class="rn-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquid, perferendis provident veritati </p>
-                        <p class="rn-price">$35</p>
-                    </div>
-                </div>
-                <div class="rn-boxes rn-boxes-2 box2">
-                    <img src="https://chapterone.qodeinteractive.com/wp-content/uploads/2019/07/product-2.jpg" alt="">
-                    <h1>Symphony Of Trilogy</h1>
-                    <p class="bar"></p>
-                    <p class="rn-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <p class="rn-price">$22</p>
-                </div>
-                <div class="rn-boxes rn-boxes-3 box3">
-                    <img src="https://i.pinimg.com/564x/fe/e0/17/fee017ebb9358a45807ab0fef7e7213f.jpg" alt="">
-                    <h1>Die Cutting and Foiling</h1>
-                    <p class="bar"></p>
-                    <p class="rn-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. D eos quae consequuntur, repellendus nemo fugit earum praesentium!</p>
-                    <p class="rn-price">$28</p>
-                </div>
-                
-                <div class="rn-boxes rn-boxes-4 box4">
-                    <img src="https://i.pinimg.com/564x/dc/34/a9/dc34a9eab548235cabb373925df47c0a.jpg" alt="">
-                    <h1>ANIMAL N.27</h1>
-                    <p class="bar"></p>
-                    <p class="rn-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <p class="rn-price">$17</p>
-                </div>
-                <div class="rn-boxes rn-boxes-5 box5">
-                    <img src="https://themedemos.webmandesign.eu/angelica/wp-content/uploads/sites/24/WMDEMO__canva-4.jpg" alt="">
-                    <h1>Hidden Prey</h1>
-                    <p class="bar"></p>
-                    <p class="rn-text">Lorem ipsum dolor sit cia eos quae consequuntur, repellendus nemo fugit earum praesentium!</p>
-                        <p class="rn-price">$20</p>
-                </div>
-                <div class="rn-boxes rn-boxes-6 box6">
-                    <img src="https://themedemos.webmandesign.eu/angelica/wp-content/uploads/sites/24/WMDEMO__canva-3.jpg" alt="">
-                    <h1>FEELINGS ARE LOST AT SEA </h1>
-                    <p class="rn-text"> D eos quae consequuntur, repellendus nemo fugit earum praesentium! </p>
-                    <p class="rn-price">$35</p>
-                    </div>
-                <div class="rn-boxes rn-boxes-7 box7">
-                    <img src="https://i.pinimg.com/564x/4a/9d/2f/4a9d2fcc45b788d826cc7824d2533cce.jpg" alt="">
-                    <h1>Und Nicht Ganz Dicht?</h1>
-                    <p class="bar"></p>
-                    <p class="rn-text">Lorem ipsu accusantium asperiores aut? Corrupti fuga repellat</p>
-                        <p class="rn-price">$25</p>
-                </div>
-                <div class="rn-boxes rn-boxes-8 box8">
-                    <img src="https://cdn.shopify.com/s/files/1/0359/5979/9852/products/shop-new-77_2000x.jpg?v=1587118663" alt="">
-                    <h1>The Red Planet</h1>
-                    <p class="bar"></p>
-                    <p class="rn-text">Lorem ipsum dotium asperiores aut? Corrupnemo fugit earum praesentium!</p>
-                        <p class="rn-price">$15</p>
-                </div>
+        <div class="rn-boxes-wrapper">
+          <div class="rn-boxes rn-boxes-1 box1">
+            <img
+              src="https://chapterone.qodeinteractive.com/wp-content/uploads/2019/07/product-7.jpg"
+              alt=""
+            />
+            <div class="text-wrapping">
+              <h1>Renaissance renaissance-history</h1>
+              <p class="rn-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt aliquid, perferendis provident veritati
+              </p>
+              <p class="rn-price">$35</p>
             </div>
+          </div>
+          <div class="rn-boxes rn-boxes-2 box2">
+            <img
+              src="https://chapterone.qodeinteractive.com/wp-content/uploads/2019/07/product-2.jpg"
+              alt=""
+            />
+            <h1>Symphony Of Trilogy</h1>
+            <p class="bar"></p>
+            <p class="rn-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p class="rn-price">$22</p>
+          </div>
+          <div class="rn-boxes rn-boxes-3 box3">
+            <img
+              src="https://i.pinimg.com/564x/fe/e0/17/fee017ebb9358a45807ab0fef7e7213f.jpg"
+              alt=""
+            />
+            <h1>Die Cutting and Foiling</h1>
+            <p class="bar"></p>
+            <p class="rn-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. D eos
+              quae consequuntur, repellendus nemo fugit earum praesentium!
+            </p>
+            <p class="rn-price">$28</p>
+          </div>
 
-        </section>
+          <div class="rn-boxes rn-boxes-4 box4">
+            <img
+              src="https://i.pinimg.com/564x/dc/34/a9/dc34a9eab548235cabb373925df47c0a.jpg"
+              alt=""
+            />
+            <h1>ANIMAL N.27</h1>
+            <p class="bar"></p>
+            <p class="rn-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p class="rn-price">$17</p>
+          </div>
+          <div class="rn-boxes rn-boxes-5 box5">
+            <img
+              src="https://themedemos.webmandesign.eu/angelica/wp-content/uploads/sites/24/WMDEMO__canva-4.jpg"
+              alt=""
+            />
+            <h1>Hidden Prey</h1>
+            <p class="bar"></p>
+            <p class="rn-text">
+              Lorem ipsum dolor sit cia eos quae consequuntur, repellendus nemo
+              fugit earum praesentium!
+            </p>
+            <p class="rn-price">$20</p>
+          </div>
+          <div class="rn-boxes rn-boxes-6 box6">
+            <img
+              src="https://themedemos.webmandesign.eu/angelica/wp-content/uploads/sites/24/WMDEMO__canva-3.jpg"
+              alt=""
+            />
+            <h1>FEELINGS ARE LOST AT SEA</h1>
+            <p class="rn-text">
+              D eos quae consequuntur, repellendus nemo fugit earum praesentium!
+            </p>
+            <p class="rn-price">$35</p>
+          </div>
+          <div class="rn-boxes rn-boxes-7 box7">
+            <img
+              src="https://i.pinimg.com/564x/4a/9d/2f/4a9d2fcc45b788d826cc7824d2533cce.jpg"
+              alt=""
+            />
+            <h1>Und Nicht Ganz Dicht?</h1>
+            <p class="bar"></p>
+            <p class="rn-text">
+              Lorem ipsu accusantium asperiores aut? Corrupti fuga repellat
+            </p>
+            <p class="rn-price">$25</p>
+          </div>
+          <div class="rn-boxes rn-boxes-8 box8">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0359/5979/9852/products/shop-new-77_2000x.jpg?v=1587118663"
+              alt=""
+            />
+            <h1>The Red Planet</h1>
+            <p class="bar"></p>
+            <p class="rn-text">
+              Lorem ipsum dotium asperiores aut? Corrupnemo fugit earum
+              praesentium!
+            </p>
+            <p class="rn-price">$15</p>
+          </div>
+        </div>
+      </section>
 
+      <!-- ! WELLBEING-CONTAINER  -->
+      <section class="rd-container" id="rd-container">
+        <div class="rd-heading">
+          <h1><span class="red">WELL</span>-BEING</h1>
+        </div>
 
-
-    <!-- ! WELLBEING-CONTAINER  -->
-        <section class="rd-container">
-            <div class="rd-heading">
-            <h1><span class="red">WELL</span>-BEING</h1>
+        <div class="rd-boxes">
+          <div class="rd-items">
+            <img
+              src="https://i.pinimg.com/564x/0d/59/46/0d594612dd28cc752c2f51013d4d404d.jpg"
+              alt="book example"
+            />
+            <div class="rd-items-text">
+              <h2>10 Books</h2>
+              <p class="rd-text">to Help You Use Body</p>
+              <p class="rd-button">Read More</p>
             </div>
+          </div>
+          <div class="rd-items">
+            <img
+              src="https://i.pinimg.com/564x/05/ce/98/05ce983ce7a619a5d32926266505ffe9.jpg"
+              alt=""
+            />
+            <div class="rd-items-text">
+              <h2>10 Books</h2>
+              <p class="rd-text">to Help You Cook Well</p>
+              <p class="rd-button">Read More</p>
+            </div>
+          </div>
+          <div class="rd-items">
+            <img
+              src="https://i.pinimg.com/564x/f1/c3/16/f1c3169bfefdf3939fc65f9bba63114c.jpg"
+              alt="book example"
+            />
+            <div class="rd-items-text">
+              <h2>10 Books</h2>
+              <p class="rd-text">to Help You Stay Positive</p>
+              <p class="rd-button">Read More</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(166, 176, 168)" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,181.3C640,171,800,181,960,165.3C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> -->
 
-            <div class="rd-boxes">
-                <div class="rd-items">
-                    <img src="https://i.pinimg.com/564x/0d/59/46/0d594612dd28cc752c2f51013d4d404d.jpg" alt="book example">
-                    <div class="rd-items-text">
-                        <h2>10 Books</h2>
-                        <p class="rd-text" >to Help You Use Body</p>
-                        <p class="rd-button">Read More</p>
-                    </div>
-                </div>
-                <div class="rd-items">
-                    <img src="https://i.pinimg.com/564x/05/ce/98/05ce983ce7a619a5d32926266505ffe9.jpg" alt="">
-                    <div class="rd-items-text">
-                        <h2>10 Books</h2>
-                        <p class="rd-text">to Help You Cook Well</p>
-                        <p class="rd-button">Read More</p>
-                    </div>
-                </div>
-                <div class="rd-items">
-                    <img src="https://i.pinimg.com/564x/f1/c3/16/f1c3169bfefdf3939fc65f9bba63114c.jpg" alt="book example">
-                    <div class="rd-items-text">
-                        <h2>10 Books</h2>
-                        <p class="rd-text">to Help You Stay Positive</p>
-                        <p class="rd-button">Read More</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(166, 176, 168)" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,181.3C640,171,800,181,960,165.3C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> -->
-
-    <!-- ! BF-CONTAINER  -->   
-        <section class="bf-container">
-            <div class="bf-items">
-                <i class="fa-solid fa-gift"></i>
-                <p>Free Gift Wrapping</p>
-            </div>
-            <div class="bf-items">
-                <i class="fa-solid fa-basket-shopping"></i>
-                <p>Fast Order Placement</p>
-            </div>
-            <div class="bf-items">
-                <i class="fa-solid fa-book"></i>
-                <p>Huge Book Collections</p>
-            </div>
-            <div class="bf-items">
-                <i class="fa-solid fa-arrows-rotate"></i>
-                <p>Fast Item Exchange</p>
-            </div>
-            <div class="bf-items">
-                <i class="fa-solid fa-truck-fast"></i>
-                <p>Safe Home Deliveries</p>
-            </div> 
-        </section>
-
+      <!-- ! BF-CONTAINER  -->
+      <section class="bf-container">
+        <div class="bf-items">
+          <i class="fa-solid fa-gift"></i>
+          <p>Free Gift Wrapping</p>
+        </div>
+        <div class="bf-items">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <p>Fast Order Placement</p>
+        </div>
+        <div class="bf-items">
+          <i class="fa-solid fa-book"></i>
+          <p>Huge Book Collections</p>
+        </div>
+        <div class="bf-items">
+          <i class="fa-solid fa-arrows-rotate"></i>
+          <p>Fast Item Exchange</p>
+        </div>
+        <div class="bf-items">
+          <i class="fa-solid fa-truck-fast"></i>
+          <p>Safe Home Deliveries</p>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <div class="footer-boxes">
-            <h2 class="footer-title">Publishers</h2>
+    <footer class="footer" id="footer">
+      <div class="footer-boxes">
+        <h2 class="footer-title">Publishers</h2>
 
-                <li class="footer-text">Bestsellers</li>
-                <li class="footer-text">Interviews</li>
-                <li class="footer-text">Authors Story</li>
-                <li class="footer-text">Book Fairs</li>
-                <li class="footer-text">Help (FAQ)</li>
+        <li class="footer-text">Bestsellers</li>
+        <li class="footer-text">Interviews</li>
+        <li class="footer-text">Authors Story</li>
+        <li class="footer-text">Book Fairs</li>
+        <li class="footer-text">Help (FAQ)</li>
+      </div>
 
+      <div class="footer-boxes">
+        <h2 class="footer-title">Contact</h2>
+        <p class="footer-text">
+          Stay in touch with everything ChapterOne, follow us on social media
+          and learn about new promotions.
+        </p>
+        <div class="footer-icon">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
         </div>
-
-        <div class="footer-boxes">
-            <h2 class="footer-title">Contact</h2>
-            <p class="footer-text">Stay in touch with everything ChapterOne, follow us on social media and learn about new promotions.</p>
-            <div class="footer-icon">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-
-            </div>
-        </div>
-        <div class="footer-boxes">
-            <h2 class="footer-title">News & Update</h2>
-            <p class="footer-text">We’d love it if you subscribed to our newsletter! You’ll love it too.</p>
-            <input type="text" placeholder="Please write your email" >
-        </div>
+      </div>
+      <div class="footer-boxes">
+        <h2 class="footer-title">News & Update</h2>
+        <p class="footer-text">
+          We’d love it if you subscribed to our newsletter! You’ll love it too.
+        </p>
+        <input type="text" placeholder="Please write your email" />
+        <i class="fa-regular fa-paper-plane paper-plane"></i>
+      </div>
     </footer>
-
-
-
-</body>
+  </body>
 </html>

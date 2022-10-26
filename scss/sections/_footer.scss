@@ -64,6 +64,18 @@ footer {
             width: 33%;
             /* border: 1px solid red; */
 
+            .paper-plane{
+                position: relative;
+                font-size: 1.5rem;
+                top: -2rem;
+                right: -10rem;
+                color: black;
+
+                &:hover {
+                    color: $n-green-1;
+                }
+            }
+
             
             .footer-title{
                 width: 60%;
@@ -80,7 +92,7 @@ footer {
 
             
             input{
-                height: 2rem;
+                height: 2.5rem;
             }
 
             .footer-icon{

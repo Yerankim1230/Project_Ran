@@ -1,42 +1,36 @@
-@use '../components/colors' as *;
-@use '../components/icons' as *;
-@use '../components/animation' as *;
-
-
+@use "../components/colors" as *;
+@use "../components/icons" as *;
+@use "../components/animation" as *;
 
 header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://cdn.pixabay.com/photo/2020/11/10/21/00/boy-5731001_960_720.jpg);
+  background-size: cover;
+  background-position: center;
+  mask-repeat: no-repeat;
+  font-family: "PT Serif", serif;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(54, 51, 51, 0.2);
+    width: 55%;
+    height: 100%;
+  }
+
+  .nav-container {
+    z-index: 1;
     width: 100%;
-    height: 100vh;
-    background-image: url(https://cdn.pixabay.com/photo/2020/11/10/21/00/boy-5731001_960_720.jpg);
-    background-size: cover;
-    background-position: center;
-    mask-repeat: no-repeat;
-    font-family: 'PT Serif', serif; 
-
-
- &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(54, 51, 51, 0.20); 
-        width: 55%; 
-        height: 100%;
-    }  
-
-
-    .nav-container {
-        z-index: 1;
-        width: 100%;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: fixed; 
-        /* animation: nav-container 12.5s  normal 1 ; */
-        background-color: rgba(121, 115, 115, 0.7);
-
-
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    /* animation: nav-container 12.5s  normal 1 ; */
+    background-color: rgba(121, 115, 115, 0.7);
 
     /* &::after{
         content: "";
@@ -48,191 +42,394 @@ header {
         height: 100%;
     }  */
 
+    .nav-logo {
+      color: $white-2;
+      font-size: 1.2rem;
+      height: 7vh;
 
-
-
-        .nav-logo{
-            color: $white-2;
-            font-size: 1.2rem;
-            height: 7vh;
-            
-
-            &::before{
-                content: "\e59d";
-                font-family: "FontAwesome";
-                padding-right: 0.5rem;
-            }
-        }
-
-        .nav-icon{
-            display: flex;
-            justify-content: space-between;
-
-            
-
-            li{
-                color: $white-2;
-                padding: 0.7rem; //이 시발놈
-                /* border: 1px solid red; */
-                
-
-                &:first-of-type::after{
-                    content: "\f218";
-                    font-family: "FontAwesome";
-                    @include nav-icon;
-                        
-                    }
-                    
-
-                &:nth-child(2)::after{
-                    content: "\f002";
-                    font-family: "FontAwesome";
-                    @include nav-icon;
-                }
-
-                &:nth-child(3)::after{
-                    content: "\f0c9";
-                    font-family: "FontAwesome";
-                    @include nav-icon;
-                }
-            
-            }
-        }
-    }  
-
-    .nav-quotes{
-        padding: 1rem;
-        width: 75%;
-        padding-top: 10rem;
-        
-        &:before {
-            content: "";
-            animation: header-text 15s infinite 0s;
-            animation-delay: 2s;
-            font-size: 2rem;
-            color: white;
-            height: 100vh;
-        }
-        
-        
-        h1{
-            font-size: 1.7rem;
-            color: white;
-            padding-top: 1rem;
-        }
-
-        .q1{
-            margin-top: 6rem;
-        }
-
-        p{
-            padding-top: 1rem;
-            padding-left: 3rem;
-            font-size: 1.9rem;
-            color: white;
-        }
+      &::before {
+        content: "\e59d";
+        font-family: "FontAwesome";
+        padding-right: 0.5rem;
+      }
     }
 
+    .nav-icon {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        color: $white-2;
+        padding: 0.7rem;
+      }
+
+      .search::after {
+        content: "\f002";
+        font-family: "FontAwesome";
+        @include nav-icon;
+      }
+
+      .cart::after {
+        content: "\f218";
+        font-family: "FontAwesome";
+        @include nav-icon;
+      }
+
+      .burger::after {
+        content: "\f0c9";
+        font-family: "FontAwesome";
+        @include nav-icon;
+      }
+
+      .account::after {
+        content: "ACCOUNT";
+        color: $white-2;
+      }
+
+      .burger {
+        .dd-ul {
+          width: 70%;
+          height: 40vh;
+          display: none;
+          position: absolute;
+          font-size: 1rem;
+          background-color: rgba(17, 17, 17, 0.7);
+          top: 3rem;
+          right: -1rem;
+
+          .dd-search {
+            background-color: $green-3;
+
+            i {
+              color: $black;
+            }
+
+            span {
+              padding-left: 2rem;
+              color: $black;
+            }
+          }
+
+          .dd-li {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 2rem;
+
+            .dd-a {
+              color: white;
+            }
+          }
+        }
+
+        &:hover {
+          .dd-ul {
+            display: block;
+          }
+        }
+      }
+
+      .cart {
+
+        .cart-ul {
+          width: 70%;
+          height: 40vh;
+          display: none;
+          position: absolute;
+          font-size: 1rem;
+          background-color: rgba(17, 17, 17, 0.7);
+          top: 3rem;
+          right: -1rem;
+          padding: 1.2rem;
+        }
+
+        .cart-h1 {
+          font-size: 1.5rem;
+          padding: 1rem 0;
+          text-align: center;
+        }
+
+        .cart-inhalt{
+          display: flex;
+          justify-content: space-between;
+          padding: 1.3rem 0.7rem;
+          border-top: 2px solid white;
+          border-bottom: 2px solid white;
+          font-size: 0.9rem;
+
+          img{
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+
+        .cart-total{
+          display: flex;
+          justify-content: space-between;
+          padding: 1rem 0.7rem;
+          font-size: 0.9rem;
+
+        }
+
+        .cart-button{
+          padding: 0.3rem;
+
+          background-color: $black;
+          width: 30%;
+          border: 0px solid black;
+          color: $white-2;
+          margin-left: 9rem;
+
+        &:hover{
+          background-color: $green-4;
+        }
+          
+          
+          
+        }
+
+        &:hover {
+
+          .cart-ul {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+          }
+        }
+      }
+
+      .account {
+        &:hover {
+          .ac-ul {
+            display: block;
+          }
+        }
+
+        .ac-ul {
+          width: 30%;
+          height: 35vh;
+
+          display: none;
+          position: absolute;
+
+          background-color: rgba(17, 17, 17, 0.7);
+
+          top: 4.4rem;
+          right: -1rem;
+          font-size: 1rem;
+
+          .ac-li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .ac-h1 {
+              font-size: 3rem;
+              padding: 1.5rem;
+            }
+
+            .ac-username,
+            .ac-password {
+              font-size: 1.5rem;
+              padding-left: 1rem;
+            }
+
+            .ac-p {
+              &:hover {
+                color: rgb(218, 188, 188);
+              }
+            }
+
+            .ac-button {
+              font-size: 1.3rem;
+              margin-left: 18rem;
+              padding: 0.5rem;
+            }
+          }
+        }
+
+        a {
+          color: $white-2;
+        }
+      }
+    }
+  }
+
+  .nav-quotes {
+    padding: 1rem;
+    width: 75%;
+    padding-top: 10rem;
+
+    &:before {
+      content: "";
+      animation: header-text 15s infinite 0s;
+      animation-delay: 2s;
+      font-size: 2rem;
+      color: white;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      color: white;
+      padding-top: 1rem;
+    }
+
+    .q1 {
+      margin-top: 6rem;
+    }
+
+    p {
+      padding-top: 1rem;
+      padding-left: 3rem;
+      font-size: 1.9rem;
+      color: white;
+    }
+  }
 }
-
-
 
 @media (max-width: 600px) {
-        .nav-container{
-            display: none;
-
-            .nav-bar{
-                display: none;
-            }
-
-            .nav-logo{
-                padding: 0.5rem;
-            }
-        }
-    
-}  
-
-
-@media (min-width: 601px) {
-
-    header{
-        width: 100%;
-        
-
-    .nav-container{
-        display: flex;
-        justify-content: space-between;
-        padding: 2rem;
-
-        .nav-bar{
-            position: absolute;
-            z-index: 2;
-            display: flex;
-            justify-content: space-between;
-
-            cursor: pointer;
-            
-    
-            a{
-                color: $white-3;
-                padding: 1rem;
-                font-size: 1.6rem;
-
-                &:hover{
-                    color: white;
-                    background-color: rgb(20, 19, 19, 0.5);
-                    border-radius: 10px;
-                    
-                }
-
-
-
-            }
-        }
-
-        .nav-logo{
-                
-                padding: 1rem;
-                font-size: 2rem;
-                padding-left: 55rem;
-            }
-
-        .nav-icon{
-            margin-right: 2rem;
-
-            li{
-                padding: 0.8rem 1.2rem;
-                font-size: 1.5rem;
-                cursor: pointer;
-
-                &:hover{
-                    color: white;
-                    background-color: rgb(20, 19, 19, 0.5);
-                    border-radius: 10px;
-                    
-                }
-
-            }
-        }
-    
+  .nav-container {
+    .nav-bar {
+      display: none;
     }
 
-    .nav-quotes{
-        padding-left: 10rem;
-        padding-top: 23em;
-        width: 50%;
-        
-
-        &:before {
-            content: "";
-            animation: header-text-desk 15s infinite 0s;
-            animation-delay: 2s;
-            font-size: 4rem;
-            color: white;
-            height: 100vh;
-            width: 50%;
-        }
+    .nav-logo {
+      padding: 0.5rem;
     }
+
+    .nav-icon {
+      .account {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
 }
 
+@media (min-width: 601px) {
+  header {
+    width: 100%;
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+
+      .nav-bar {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+
+        cursor: pointer;
+
+        a {
+          color: $white-3;
+          padding: 1rem;
+          font-size: 1.6rem;
+
+          &:hover {
+            color: white;
+            background-color: rgb(20, 19, 19, 0.5);
+            border-radius: 10px;
+          }
+        }
+      }
+
+      .nav-logo {
+        padding: 1rem;
+        font-size: 2rem;
+        padding-right: 23rem;
+      }
+
+      .nav-icon {
+        margin-right: 2rem;
+
+        li {
+          padding: 0.8rem 1.2rem;
+          font-size: 1.5rem;
+          cursor: pointer;
+
+          &:hover {
+            color: white;
+            background-color: rgb(20, 19, 19, 0.5);
+            border-radius: 10px;
+          }
+        }
+
+        .account {
+          font-size: 1.7rem;
+        }
+
+        .burger {
+          display: none;
+        }
+
+        .cart{
+          
+          .cart-ul{
+            width: 30%;
+          height: 35vh;
+
+          display: none;
+          position: absolute;
+
+          background-color: rgba(17, 17, 17, 0.7);
+
+          top: 4.4rem;
+          right: -1rem;
+          font-size: 1rem;
+          padding: 1.5rem;
+
+          .cart-h1{
+            font-size: 2.7rem;
+          }
+
+          .cart-inhalt{
+
+            img{
+              width: 4rem;
+              height: 4.5rem;
+            }
+
+            p{
+              font-size: 1.8rem;
+            }
+          }
+
+          .cart-total{
+            font-size: 1.8rem;
+          }
+
+          .cart-button{
+            font-size: 1.5rem;
+            margin-left: 20rem;
+            margin-top: 1rem;
+          }
+          }
+        }
+      }
+    }
+
+    .nav-quotes {
+      padding-left: 10rem;
+      padding-top: 23em;
+      width: 50%;
+
+      &:before {
+        content: "";
+        animation: header-text-desk 15s infinite 0s;
+        animation-delay: 2s;
+        font-size: 4rem;
+        color: white;
+        height: 100vh;
+        width: 50%;
+      }
+    }
+  }
 }

@@ -286,22 +286,46 @@ header .nav-container .nav-icon {
 header .nav-container .nav-icon li {
   color: rgb(226, 226, 224);
   padding: 0.7rem;
-  /* border: 1px solid red; */
 }
-header .nav-container .nav-icon li:first-of-type::after {
+header .nav-container .nav-icon .search::after {
   content: "\f218";
   font-family: "FontAwesome";
   font-size: 1.5em;
 }
-header .nav-container .nav-icon li:nth-child(2)::after {
+header .nav-container .nav-icon .cart::after {
   content: "\f002";
   font-family: "FontAwesome";
   font-size: 1.5em;
 }
-header .nav-container .nav-icon li:nth-child(3)::after {
+header .nav-container .nav-icon .burger::after {
   content: "\f0c9";
   font-family: "FontAwesome";
   font-size: 1.5em;
+}
+header .nav-container .nav-icon .burger .dd-ul {
+  width: 70%;
+  height: 40vh;
+  display: none;
+  position: absolute;
+  font-size: 1rem;
+  background-color: rgba(17, 17, 17, 0.7);
+  top: 3rem;
+  right: -1rem;
+}
+header .nav-container .nav-icon .burger .dd-ul .dd-li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .nav-container .nav-icon .burger .dd-ul .dd-li .dd-a {
+  color: white;
+}
+header .nav-container .nav-icon .burger:hover .dd-ul {
+  display: block;
+}
+header .nav-container .nav-icon .account a {
+  color: rgb(226, 226, 224);
 }
 header .nav-quotes {
   padding: 1rem;
@@ -334,14 +358,15 @@ header .nav-quotes p {
 }
 
 @media (max-width: 600px) {
-  .nav-container {
-    display: none;
-  }
   .nav-container .nav-bar {
     display: none;
   }
   .nav-container .nav-logo {
     padding: 0.5rem;
+  }
+  .nav-container .nav-icon .account {
+    display: none;
+    visibility: hidden;
   }
 }
 @media (min-width: 601px) {
@@ -354,7 +379,7 @@ header .nav-quotes p {
     padding: 2rem;
   }
   header .nav-container .nav-bar {
-    position: absolute;
+    position: relative;
     z-index: 2;
     display: flex;
     justify-content: space-between;
@@ -373,7 +398,7 @@ header .nav-quotes p {
   header .nav-container .nav-logo {
     padding: 1rem;
     font-size: 2rem;
-    padding-left: 55rem;
+    padding-right: 23rem;
   }
   header .nav-container .nav-icon {
     margin-right: 2rem;
@@ -387,6 +412,12 @@ header .nav-quotes p {
     color: white;
     background-color: rgba(20, 19, 19, 0.5);
     border-radius: 10px;
+  }
+  header .nav-container .nav-icon .account {
+    font-size: 1.7rem;
+  }
+  header .nav-container .nav-icon .burger {
+    display: none;
   }
   header .nav-quotes {
     padding-left: 10rem;
@@ -950,6 +981,16 @@ footer .footer-boxes .footer-icon i:hover {
     width: 33%;
     /* border: 1px solid red; */
   }
+  footer .footer-boxes .paper-plane {
+    position: relative;
+    font-size: 1.5rem;
+    top: -2rem;
+    right: -10rem;
+    color: black;
+  }
+  footer .footer-boxes .paper-plane:hover {
+    color: #909870;
+  }
   footer .footer-boxes .footer-title {
     width: 60%;
     font-size: 1.7rem;
@@ -961,7 +1002,7 @@ footer .footer-boxes .footer-icon i:hover {
     /* border: 1px solid yellow; */
   }
   footer .footer-boxes input {
-    height: 2rem;
+    height: 2.5rem;
   }
   footer .footer-boxes .footer-icon {
     cursor: pointer;
